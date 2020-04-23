@@ -1,0 +1,201 @@
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 3fr 5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "title title opinions opinions"
+    "article-1 video opinions opinions"
+    "article-1 video operations operations"
+    "article-2 article-3 sug1 sug2"
+    "article-2 article-3 sug3 sug4"
+    "article-2 article-3 sug5 sug6"
+    "article-2 article-3 sug7 sug8";
+    padding: 10px
+
+}
+.title{
+    margin-top: 10px;
+    grid-area: title;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.article-1{
+    display: flex;
+    align-items: center;
+    grid-area: article-1;
+    border-bottom: 1px solid grey
+}
+.article-1__title{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.article-1__byline{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.article-1__points{
+    list-style-type: disc;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.opinions__comments{
+    color: blue;
+}
+
+
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: video;
+    border-bottom: 1px solid grey
+}
+
+.opinions{
+    grid-area: opinions;
+}
+
+.opinions__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.opinions__byline{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.opinions__points{
+    list-style-type: disc;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.operations{
+    grid-area: operations;
+    border-bottom: 1px solid gray;
+}
+.operations__title1{
+    padding:20px 0px;
+    font-weight:bold;
+}
+.operations__title{
+   padding:10px 0px;
+    font-weight:bold;
+}
+.operations__byline{
+      color: gray;
+    margin-bottom: 10px;
+}
+.operations__points{
+    padding-top:0px;
+}
+.article-2{
+    grid-area: article-2;
+}
+.article-2__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top:15px;
+}
+.article-2__byline{
+    color: gray;
+    margin-bottom: 10px;
+    padding:5px;
+}
+.article-2__points{
+    list-style-type: disc;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.article-3{
+    grid-area: article-3;
+}
+.article-3__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top:15px;
+}
+.article-3__byline{
+    color: gray;
+    margin-bottom: 10px;
+   padding: 0px 5px;
+}
+
+.article-3__points{
+    list-style-type: disc;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sug1{
+    grid-area:sug1;
+}
+.sug1__title{
+    color: gray;
+    padding:5px 5px 5px 0px;
+}
+.sug2{
+    grid-area:sug2;
+}
+.sug2__title{
+    color: gray;
+    padding:5px 5px 5px 0px;
+}
+.sug3{
+    grid-area:sug3;
+}
+.sug3__title{
+    color: gray;
+    padding:5px 5px 5px 0px;
+}
+.sug4{
+    grid-area:sug4;
+}
+.sug4__title{
+    color: gray;
+    padding:5px 5px 5px 0px;
+}
+.sug5{
+    grid-area:sug5;
+}
+.sug5__title{
+    color: gray;
+    padding:5px 5px 5px 0px;
+}
+.sug6{
+    grid-area:sug6;
+}
+.sug6__title{
+    color: gray;
+    padding:5px 5px 5px 0px;
+}
+.sug7{
+    grid-area:sug7;
+}
+.sug7__title{
+    color: gray;
+    padding:5px 5px 5px 0px;
+}
+.sug8{
+    grid-area:sug8;
+}
+.sug8__title{
+    color: gray;
+    padding:5px 5px 5px 0px;
+}
